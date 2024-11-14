@@ -26,6 +26,7 @@ font-face {
     --Blue:hsl(228, 45%, 44%);
     /*Font*/
     --font-primary: 'Figtree-SemiBold', sans-serif;
+    --font-secundary:'Figtree-Extrabold', sans-serif;
     --fs-base: 16px;
     --lh-base: 150%;
     --ls-base: 0px;
@@ -44,7 +45,6 @@ body{
     margin: 0;
     padding: 0;
     font-family: var(--font-primary);
-    line-height: var(--lh-base);
     background-color: var(--Yellow);
     min-height: 100vh;
     display: flex;
@@ -62,11 +62,11 @@ body{
     border-radius: 20px;
     border: 1px solid var(--Gray-950);
     box-shadow: 10px 10px 0px var(--Gray-950);
+    max-width: 384px;
 }
 
 main{
     grid-column: span 4;
-
 }
 
 main img {
@@ -74,6 +74,7 @@ main img {
     height: 12.5rem;
     object-fit: cover;
     margin-bottom: 1.5em;
+    border-radius: 10px;
 }
 
 main .category{
@@ -84,6 +85,8 @@ main .category{
     color: var(--Gray-950);
     font-size: var(--fs-14);
     font-weight: var(--fw-800);
+    font-family: var(--font-secundary);
+    border-radius: 4px;
 }
 
 main .publish-date{
@@ -92,21 +95,41 @@ main .publish-date{
 }
 
 main h1{
+    margin: 0;
+}
+
+main h1 a{
     font-size: var(--fs-24);
     color: var(--Gray-950);
+    text-decoration: none;
+    letter-spacing: 0;
+    font-family: var(--font-secundary);
     font-weight: var(--fw-800);
+
+}
+
+main h1 a:hover{
+    color:var(--Yellow);
+}
+
+main h1 a:focus{
+    color:var(--Yellow);
 }
 
 main .description{
+    padding: 12px 0;
     color: var(--Gray-500);
-    font-size: var(--fs-14);
+    font-size: var(--fs-16);
+    font-family: var(--font-primary);
+    max-width: 326px;
+    margin:0;
 }
-
 main .author{
     display: flex;
     align-items: center;
     gap: 12px;
     margin:0;
+    padding-top:12px;
 }
 
 .author img{
@@ -117,6 +140,9 @@ main .author{
 
 .author p{
     margin: 0px;
+    font-family: var(--font-secundary);
+    font-size: var(--fs-16);
+    font-weight: var(--fw-800);
 }
 
 
@@ -137,7 +163,18 @@ footer p{
 
 footer a{
     color: var(--Blue);
+    text-decoration: none;
 }
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer a:focus{
+    background-color: var(--Gray-950);
+    color:var(--Yellow);
+}
+
 
 /*
 .attribution { font-size: 11px; text-align: center; }
