@@ -34,7 +34,7 @@ My solution:
 
 ### Links
 - Solution URL: [Blog Card Preview Repo](https://github.com/lia-oliveira/blog-preview-card)
-- Live Site URL: [Blog Card Preview Live Site]()
+- Live Site URL: [Blog Card Preview Live Site](https://blog-preview-card-seven-ruddy.vercel.app/)
 
 ## My process
 
