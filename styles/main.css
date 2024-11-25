@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-font-face {
+@font-face {
     font-family: 'Figtree-ExtraBold';
     src: url(./../assets/fonts/static/Figtree-ExtraBold.ttf) format('truetype');
     font-weight: 800;
